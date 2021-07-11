@@ -45,8 +45,8 @@ stylelint ./builder/main.css --config ./builder/stylelint.json || exit 1
 postcss --use cssnano -o ./main.css ./builder/main.css
 stylelint ./builder/404.css --config ./builder/stylelint.json || exit 1
 postcss --use cssnano -o ./404.css ./builder/404.css
-cp -r markdown building
-cd building
+cp -r markdown docs
+cd docs
 recursivemd2html
 cd $maindir
 rm main.css 404.css
