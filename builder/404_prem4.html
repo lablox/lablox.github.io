@@ -1,0 +1,31 @@
+changequote(`{{', `}}')dnl
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="We are making open-source body parts">
+    <title>rsp8 - Page Not Found</title>
+    <style>include({{./404.css}})</style>
+    <link rel="icon" href="data:;base64,esyscmd({{base64 ../builder/favicon.png | tr -d '\n'}})">
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="./">Home</a>
+      <a href="./gnr/">General</a>
+      <a href="./hrt/">Heart</a>
+      <a href="./bld/">Blood</a>
+      <a href="./lng/">Lung</a>
+      <a href="./dgs/">Digestive</a>
+      <a href="./kdn/">Kidney</a>
+      <a href="./lvr/">Liver</a>
+      <a href="./cnt/">Contributors</a>
+    </div>
+    <div class="content">
+      <div class="headsvg">
+        include({{/builds/rsp8/gnr/web/builder/respaw.svg}})
+      </div>
+      include({{404_body.html}})
+    </div>
+  </body>
+</html>
