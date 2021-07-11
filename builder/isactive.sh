@@ -12,4 +12,4 @@ test -z $topdir && ln=1
 [[ $topdir = kdn ]] && ln=7
 [[ $topdir = lvr ]] && ln=8
 [[ $topdir = cnt ]] && ln=9
-sed "$ln"'s|hre|class\=\"active\"\ hre|' /builds/rsp8/gnr/web/builder/navbar
+sed "$ln"'s|hre|class\=\"active\"\ hre|' ./builder/navbar
