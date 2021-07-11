@@ -8,3 +8,10 @@ jobs:
 
       - uses: lablox/lablox.github.io@v0.0.1
         name: build
+        
+      - name: commit
+        run: |
+          git config --global user.name '${GITHUB_ACTOR}'
+          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git commit -am "Update imorty.com"
+          git push
