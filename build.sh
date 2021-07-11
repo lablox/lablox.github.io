@@ -2,8 +2,6 @@
 
 set -e
 
-echo oooooooooooooooooooo
-pwd
 
 404md2html () {
 cp $maindir/404.css .
