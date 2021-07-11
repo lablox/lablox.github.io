@@ -2,6 +2,9 @@
 
 set -e
 
+echo oooooooooooooooooooo
+pwd
+
 404md2html () {
 cp $maindir/404.css .
 pandoc -f markdown-auto_identifiers -t html5 --lua-filter=$maindir/builder/auto_identifiers_underscore.lua 404.md -o 404_body.html
