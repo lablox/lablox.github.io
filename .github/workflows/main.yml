@@ -8,3 +8,5 @@ jobs:
 
       - uses: lablox/lablox.github.io@v0.0.1
         name: build
+        with:
+          build-context: ./
