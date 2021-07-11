@@ -1,0 +1,10 @@
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout repository
+
+      - uses: lablox/lablox.github.io@v0.0.1
+        name: build
