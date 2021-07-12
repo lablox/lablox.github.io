@@ -5,6 +5,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         name: Checkout repository
+        
+      - name: debug
+        run: ls -lrtha
 
       - name: build
         run: docker run ghcr.io/imorty/webimg:latest ./build.sh
