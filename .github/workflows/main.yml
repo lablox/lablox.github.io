@@ -6,7 +6,7 @@ jobs:
       - uses: actions/checkout@v2
         name: Checkout repository
 
-      - uses: lablox/lablox.github.io@v1.0.0
+      - uses: lablox/lablox.github.io@v1.0.1
         name: build
         
       - name: commit
