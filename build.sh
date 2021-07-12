@@ -48,6 +48,7 @@ postcss --use cssnano -o ./404.css ./builder/404.css
 rm -rf docs
 cp -r markdown docs
 cd docs
+cp ../builder/imorty.png .
 recursivemd2html
 cd $maindir
 rm main.css 404.css
