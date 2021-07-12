@@ -52,4 +52,5 @@ recursivemd2html
 cd $maindir
 cp ./builder/imorty.png docs
 rm -rf docs
+ls -lrtha
 rm main.css 404.css
