@@ -16,3 +16,4 @@ jobs:
           git add -A
           git commit -m "Update imorty.com"
           git push
+          git push origin HEAD:main
