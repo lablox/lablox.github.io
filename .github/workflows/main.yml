@@ -6,7 +6,7 @@ jobs:
       - name: debug
         run: pwd && ls -lrtha
         
-      - uses: lablox/lablox.github.io@v1.0.7
+      - uses: lablox/lablox.github.io@v1.0.8
         name: build
         
       - name: commit
