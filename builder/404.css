@@ -14,6 +14,11 @@ body {
     line-height: 1.6;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+}
+
 h1 {
     font-size: 480%;
     margin: 0;
@@ -29,13 +34,12 @@ a {
 }
 
 div.content {
-    font-size: 110%;
-    margin-left: 210px;
-    max-width: 800px;
-    padding: 1%;
+    font-size: 120%;
+    margin: 1% auto;
+    max-width: 650px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     div.content {
         margin: 0;
         font-size: 100%;
