@@ -3,10 +3,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: debug
-        run: pwd && ls -lrtha
+      - uses: actions/checkout@v2
+        name: Checkout repository
         
-      - uses: lablox/lablox.github.io@v1.0.8
+      - uses: lablox/lablox.github.io@v1.0.9
         name: build
         
       - name: commit
