@@ -3,10 +3,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        name: Checkout repository
-
-      - uses: lablox/lablox.github.io@v1.0.6
+      - uses: lablox/lablox.github.io@v1.0.7
         name: build
         
       - name: commit
