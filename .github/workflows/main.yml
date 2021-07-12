@@ -7,7 +7,7 @@ jobs:
         name: Checkout repository
 
       - name: build
-        run: docker exec ghcr.io/imorty/webimg:latest ./build.sh
+        run: docker run ghcr.io/imorty/webimg:latest ./build.sh
 
       - name: commit
         run: |
