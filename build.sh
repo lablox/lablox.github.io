@@ -50,5 +50,5 @@ cp -r markdown docs
 cd docs
 recursivemd2html
 cd $maindir
-cp ../builder/imorty.png .
+cp ./builder/imorty.png .
 rm main.css 404.css
