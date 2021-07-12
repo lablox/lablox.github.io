@@ -7,7 +7,7 @@ jobs:
         name: Checkout repository
 
       - name: build
-        run: docker run Dockerfile
+        run: docker build Dockerfile
 
       - name: commit
         run: |
