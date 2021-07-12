@@ -12,7 +12,7 @@ jobs:
       - name: commit
         run: |
           git config --global user.name Mehran-Baghi
-          git config --global user.email ${MHRN_EML}
+          git config --global user.email ${{ MHRN_EML }}
           git add -A
           git commit -m "Update imorty.com"
           git push
