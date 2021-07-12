@@ -5,12 +5,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         name: Checkout repository
-        
-      - name: chmod
-        run: chmod +x ./build.sh
 
       - name: build
-        run: docker run ghcr.io/imorty/webimg:latest ./build.sh
+        run: docker run Dockerfile
 
       - name: commit
         run: |
