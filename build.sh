@@ -51,4 +51,5 @@ cd docs
 recursivemd2html
 cd $maindir
 cp ./builder/imorty.png docs
+touch docs/test
 rm main.css 404.css
