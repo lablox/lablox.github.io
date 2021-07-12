@@ -51,3 +51,10 @@ cd docs
 recursivemd2html
 cd $maindir
 rm main.css 404.css
+
+# Commit
+git config --global user.name Mehran-Baghi
+git config --global user.email ${{ secrets.MHRN_EML }}
+git add -A
+git commit -m "Update imorty.com"
+git push
