@@ -3,6 +3,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: debug
+        run: pwd && ls -lrtha
+        
       - uses: lablox/lablox.github.io@v1.0.7
         name: build
         
