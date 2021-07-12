@@ -17,7 +17,7 @@ name=$(echo $1 | cut -d'.' -f1)
 pandoc -f markdown-auto_identifiers -t html5 --lua-filter=$maindir/builder/auto_identifiers_underscore.lua $1 -o body.html
 cat $1 | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > title
 cat $maindir/builder/header.html body.html $maindir/builder/footer.html | m4 > $name-premini.html
-html-minifier -c $maindir/builder/html-minifier.conf $name-premini.html > $name.html
+html-minifier -c $maindir/builder/html-minifier.conf $name-premini.html > $name
 rm body.html $name-premini.html title main.css $1
 }
 
