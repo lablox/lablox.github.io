@@ -12,7 +12,7 @@ do
     sed "s/objnumber/$obj/g" ../builder/layer >> pancake
 done
 cat pancake
-cat $maindir/builder/home_header.html body.html pancake $maindir/builder/footer.html | m4 > index-premini.html
+cat $maindir/builder/home_header.html body.html pancake $maindir/builder/home_footer.html | m4 > index-premini.html
 html-minifier -c $maindir/builder/html-minifier.conf index-premini.html > index.html
 }
 
