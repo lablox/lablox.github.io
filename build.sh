@@ -53,6 +53,9 @@ md2html index.md home_header.html home.css
 cd ../docs
 recursivemd2html
 cd $maindir
+pwd
+ls -lrtha
+ls -lrtha docs
 mv h404/index.html h404/404.html docs
 cp ./builder/imorty.png docs
 rm -rf h404
