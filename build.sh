@@ -50,12 +50,13 @@ mv home.css 404.css h404
 cd h404
 md2html index.md home_header.html home.css
 404md2html
-cd ../docs
-recursivemd2html
-cd $maindir
+cd ..
 pwd
 ls -lrtha
 ls -lrtha docs
+cd docs
+recursivemd2html
+cd $maindir
 mv h404/index.html h404/404.html docs
 cp ./builder/imorty.png docs
 rm -rf h404
