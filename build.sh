@@ -9,9 +9,9 @@ cat index.md | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > title
 for ((obj = 1 ; obj <= $(ls -fA1 ../markdown/p | wc -l) ; obj++))
 do
     cat ../markdown/p/$obj/index.md | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > "$obj"_title
-    sed "s/objnumber/$obj/g" ../builder/layer >> pancake
+    sed "s/objnumber/$obj/g" ../builder/layer >> tmpcake
 done
-echo "</div>" >> pancake
+echo "</div>" | cat - tmpcake > pancake
 cat $maindir/builder/home_header.html body.html pancake $maindir/builder/footer.html | m4 > index-premini.html
 html-minifier -c $maindir/builder/html-minifier.conf index-premini.html > index.html
 }
