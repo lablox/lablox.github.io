@@ -27,7 +27,8 @@ do
         cd $obj
         recursivemd2html
         cd ..
-    else
+    elif [[ $obj = "index.md" ]]
+    then
         md2html $obj page_header.html $maindir/page.css
     fi
 done
