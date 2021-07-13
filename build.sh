@@ -28,7 +28,7 @@ do
         recursivemd2html
         cd ..
     else
-        md2html $obj page_header.html $maindir/page.css
+        md2html $obj page_header.html $maindir/debug/page.css
     fi
 done
 }
