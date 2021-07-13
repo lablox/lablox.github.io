@@ -4,7 +4,6 @@ set -e
 
 
 404md2html () {
-cp $maindir/404.css .
 pandoc -f markdown-auto_identifiers -t html5 --lua-filter=$maindir/builder/auto_identifiers_underscore.lua 404.md -o 404_body.html
 m4 $maindir/builder/404_prem4.html > 404_m4ed.html
 html-minifier -c $maindir/builder/html-minifier.conf 404_m4ed.html > 404.html
