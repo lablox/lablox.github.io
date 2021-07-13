@@ -1,6 +1,6 @@
-  <div class="parent">
+  <div class="prnt">
     <div class="tmb center">
-      <img src="./objnumber.jpg" alt="include({{./objnumber_title}})">
+      <img src="/p/objnumber/objnumber.jpg" alt="include({{./objnumber_title}})">
     </div>
     <div class="txt">
       <p>include({{./objnumber_title}})</p>
