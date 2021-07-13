@@ -30,7 +30,7 @@ do
         recursivemd2html
         cd ..
     else
-        md2html $obj page_header.html main.css
+        md2html $obj page_header.html page.css
     fi
 done
 }
