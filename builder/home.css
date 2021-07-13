@@ -35,12 +35,12 @@ h1 {
 .prnt {
     display: flex;
     flex-wrap: wrap;
-    background-color: #151515;
+    background-color: #111;
     margin: 5% 0;
 }
 
 .tmb {
-    flex: 0 1 150px;
+    flex: 0 1 100px;
 }
 
 .txt {
