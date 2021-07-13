@@ -3,6 +3,18 @@
 set -e
 
 
+homemd2html () {
+pandoc -f markdown-auto_identifiers -t html5 --lua-filter=$maindir/builder/auto_identifiers_underscore.lua index.md -o body.html
+cat index.md | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > title
+for ((obj = 1 ; obj <= $(ls -fA1 ../markdown/p | wc -l) ; obj++))
+do
+    cat ../markdown/p/$obj/index.md | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > $obj_title
+    sed "s/objnumber/$obj/g" ../builder/layer >> pancake
+done    
+cat $maindir/builder/home_header.html body.html pancake $maindir/builder/footer.html | m4 > index-premini.html
+html-minifier -c $maindir/builder/html-minifier.conf index-premini.html > index.html
+}
+
 404md2html () {
 pandoc -f markdown-auto_identifiers -t html5 --lua-filter=$maindir/builder/auto_identifiers_underscore.lua 404.md -o 404_body.html
 m4 $maindir/builder/404_prem4.html > 404_m4ed.html
@@ -29,7 +41,7 @@ do
         cd ..
     elif [[ $obj = "index.md" ]]
     then
-        md2html $obj page_header.html $maindir/page.css
+        md2html $obj page_header.html
     fi
 done
 }
@@ -49,7 +61,7 @@ mkdir h404
 mv docs/index.md docs/404.md h404
 mv home.css 404.css h404
 cd h404
-md2html index.md home_header.html home.css
+homemd2html
 404md2html
 cd ../docs
 recursivemd2html
