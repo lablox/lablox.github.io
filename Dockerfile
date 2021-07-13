@@ -1,4 +1,4 @@
 FROM ghcr.io/imorty/webimg:latest
-COPY build.sh /build.sh
-RUN chmod +x build.sh
-ENTRYPOINT ["/build.sh"]
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
