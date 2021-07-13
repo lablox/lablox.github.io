@@ -54,6 +54,10 @@ h3 {
     border-radius: 15px;
 }
 
+.txtcnt {
+    text-align: center;
+}
+
 .content {
     font-size: 120%;
     margin: 1% auto;
