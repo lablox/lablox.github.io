@@ -59,9 +59,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     background-color: #111;
-    border-style: solid;
-    border-width: 1px;
-    margin: 3% 0 10%;
+    margin: 0 0 10%;
 }
 
 .logo {
@@ -71,7 +69,6 @@ h1 {
 .welcome {
     flex: 1 1 300px;
     text-align: center;
-    border-style: solid;
 }
 
 .welcome p {
