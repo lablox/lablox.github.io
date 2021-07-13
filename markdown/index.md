@@ -1,5 +1,5 @@
 # Welcome to Imorty
 
-We seek immortality.
+Death is cringe. We seek immortality.
 
 [GitHub](https://github.com/imorty) | [YouTube](/)
