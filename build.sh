@@ -16,7 +16,7 @@ pandoc -f markdown-auto_identifiers -t html5 --lua-filter=$maindir/builder/auto_
 cat $1 | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > title
 cat $maindir/builder/$2 body.html $maindir/builder/footer.html | m4 > $name-premini.html
 html-minifier -c $maindir/builder/html-minifier.conf $name-premini.html > $name.html
-rm body.html $name-premini.html title $1 $3
+rm body.html $name-premini.html title $1
 }
 
 recursivemd2html () {
@@ -55,4 +55,4 @@ recursivemd2html
 cd $maindir
 mv h404/index.html h404/404.html docs
 cp ./builder/imorty.png docs
-rm -rf h404
+rm -rf h404 page.css home.css
