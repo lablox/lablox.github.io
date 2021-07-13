@@ -54,6 +54,8 @@ cd ..
 pwd
 ls -lrtha
 ls -lrtha docs
+mkdir debug
+mv page.css debug
 cd docs
 recursivemd2html
 cd $maindir
