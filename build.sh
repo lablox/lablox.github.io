@@ -8,7 +8,7 @@ pandoc -f markdown-auto_identifiers -t html5 --lua-filter=$maindir/builder/auto_
 cat index.md | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > title
 for ((obj = 1 ; obj <= $(ls -fA1 ../markdown/p | wc -l) ; obj++))
 do
-    cat ../markdown/p/$obj/index.md | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > $obj_title
+    cat ../markdown/p/$obj/index.md | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > "$obj"_title
     sed "s/objnumber/$obj/g" ../builder/layer >> pancake
 done    
 cat $maindir/builder/home_header.html body.html pancake $maindir/builder/footer.html | m4 > index-premini.html
