@@ -28,7 +28,7 @@ do
         recursivemd2html
         cd ..
     else
-        md2html $obj page_header.html $maindir/debug/page.css
+        md2html $obj page_header.html $maindir/page.css
     fi
 done
 }
@@ -50,13 +50,9 @@ mv home.css 404.css h404
 cd h404
 md2html index.md home_header.html home.css
 404md2html
-cd ..
-pwd
-ls -lrtha
-ls -lrtha docs
-mkdir debug
-mv page.css debug
-cd docs
+cat h404/index.html
+cat h404/404.html
+cd ../docs
 recursivemd2html
 cd $maindir
 mv h404/index.html h404/404.html docs
