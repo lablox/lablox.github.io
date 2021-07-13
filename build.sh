@@ -28,7 +28,7 @@ do
         recursivemd2html
         cd ..
     else
-        md2html $obj page_header.html page.css
+        md2html $obj page_header.html $maindir/page.css
     fi
 done
 }
@@ -47,7 +47,6 @@ cp -r markdown docs
 mkdir h404
 mv docs/index.md docs/404.md h404
 mv home.css 404.css h404
-mv page.css docs
 cd h404
 md2html index.md home_header.html home.css
 404md2html
@@ -56,4 +55,4 @@ recursivemd2html
 cd $maindir
 mv h404/index.html h404/404.html docs
 cp ./builder/imorty.png docs
-rm docs/page.css h404
+rm -rf h404
