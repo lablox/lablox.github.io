@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Helvetica,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji;
+    color: #ccc;
+    background-color: #1c1c1c;
+    line-height: 1.6;
+}
+
+a {
+    color: #ccc;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.prnt {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #151515;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.tmb {
+    flex: 0 1 150px;
+}
+
+.txt {
+    flex: 1 1 300px;
+}
+
+.content {
+    font-size: 120%;
+    margin: 1% auto;
+    max-width: 650px;
+}
+
+@media screen and (max-width: 500px) {
+    div.content {
+        margin: 0;
+        font-size: 100%;
+    }
+}
