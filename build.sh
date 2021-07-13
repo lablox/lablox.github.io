@@ -50,8 +50,6 @@ mv home.css 404.css h404
 cd h404
 md2html index.md home_header.html home.css
 404md2html
-cat index.html
-cat 404.html
 cd ../docs
 recursivemd2html
 cd $maindir
