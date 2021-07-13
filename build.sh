@@ -12,7 +12,6 @@ rm 404_body.html 404_m4ed.html 404.css 404.md
 }
 
 md2html () {
-cp $maindir/$3 .
 name=$(echo $1 | cut -d'.' -f1)
 pandoc -f markdown-auto_identifiers -t html5 --lua-filter=$maindir/builder/auto_identifiers_underscore.lua $1 -o body.html
 cat $1 | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > title
@@ -41,7 +40,7 @@ postcss --use cssnano -o ./$1 ./builder/$1
 }
 
 maindir=$(pwd)
-lintmini main.css
+lintmini page.css
 lintmini home.css
 lintmini 404.css
 rm -rf docs
@@ -49,6 +48,7 @@ cp -r markdown docs
 mkdir h404
 mv docs/index.md docs/404.md h404
 mv home.css 404.css h404
+mv page.css docs
 cd h404
 md2html index.md home_header.html home.css
 404md2html
@@ -57,4 +57,4 @@ recursivemd2html
 cd $maindir
 mv h404/index.html h404/404.html docs
 cp ./builder/imorty.png docs
-rm main.css h404
+rm docs/page.css h404
