@@ -34,20 +34,23 @@ h3 {
     margin: 0 auto;
 }
 
-.prnt {
+.rnd {
+    border-radius: 15px;
+}
+
+.banner {
     display: flex;
     flex-wrap: wrap;
-    background-color: #151515;
-    border-radius: 15px;
-    margin: 10px 0;
+    background-color: #000;
 }
 
-.tmb {
-    flex: 0 1 150px;
+.logo {
+    flex: 0 1 196px;
 }
 
-.txt {
+.welcome {
     flex: 1 1 300px;
+    text-align: center;
 }
 
 .content {
