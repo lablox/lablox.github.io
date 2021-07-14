@@ -28,6 +28,10 @@ img {
     margin: 0 auto;
 }
 
+.rnd {
+    border-radius: 15px;
+}
+
 .bnr {
     display: flex;
     flex-wrap: wrap;
