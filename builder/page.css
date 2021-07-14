@@ -32,6 +32,12 @@ img {
     border-radius: 15px;
 }
 
+.btn {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .bnr {
     display: flex;
     flex-wrap: wrap;
