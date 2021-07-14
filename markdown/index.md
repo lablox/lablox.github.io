@@ -2,4 +2,5 @@
 
 Death is cringe. We seek immortality.
 
-[GitHub](https://github.com/imorty) | [YouTube](/)
+* [GitHub](https://github.com/imorty)
+* [YouTube](/)
