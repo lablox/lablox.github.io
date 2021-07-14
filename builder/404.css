@@ -69,10 +69,6 @@ img {
     margin: 5% 0;
 }
 
-.tmb {
-    flex: 0 1 100px;
-}
-
 .txt {
     flex: 1 1 300px;
     margin: 0 10px;
