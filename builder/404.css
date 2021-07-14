@@ -14,28 +14,18 @@ body {
     line-height: 1.6;
 }
 
+a {
+    color: #ccc;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-.msg h1 {
-    font-size: 480%;
-    margin: 0;
-}
-
-.msg h2 {
-    font-size: 195%;
-    margin: 0;
-}
-
 .center {
     display: block;
     margin: 0 auto;
-}
-
-.rnd {
-    border-radius: 15px;
 }
 
 .bnr {
@@ -70,6 +60,40 @@ img {
 .bnrtxt a {
     text-decoration: none;
     margin: 0 5px;
+}
+
+.prnt {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #151515;
+    margin: 5% 0;
+}
+
+.tmb {
+    flex: 0 1 100px;
+}
+
+.txt {
+    flex: 1 1 300px;
+    margin: 0 10px;
+}
+
+.txt a {
+    background-color: #000;
+}
+
+.txt p {
+    margin: 0;
+}
+
+.txt h1 {
+    font-size: 480%;
+    margin: 0;
+}
+
+.txt h2 {
+    font-size: 195%;
+    margin: 0;
 }
 
 .content {
