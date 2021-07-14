@@ -46,6 +46,7 @@ img {
 .bnrtxt {
     flex: 1 1 300px;
     text-align: center;
+    max-width: 100%;
 }
 
 .content {
