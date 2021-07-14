@@ -83,16 +83,6 @@ img {
     background-color: #000;
 }
 
-.txt h1 {
-    font-size: 480%;
-    margin: 0;
-}
-
-.txt h2 {
-    font-size: 195%;
-    margin: 0;
-}
-
 .content {
     margin: 1% auto;
     max-width: 650px;
