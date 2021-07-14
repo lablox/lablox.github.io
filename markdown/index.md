@@ -1,6 +1,6 @@
 # Welcome to Imorty
 
-Death is cringe. We seek immortality.
+Death is cringe. Seek immortality.
 
 * [GitHub](https://github.com/imorty)
 * [YouTube](/)
