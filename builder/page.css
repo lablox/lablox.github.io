@@ -49,6 +49,24 @@ img {
     max-width: 100%;
 }
 
+.bnrtxt ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bnrtxt li {
+    display: inline-block;
+    background-color: #1c1c1c;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.bnrtxt a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
 .content {
     margin: 1% auto;
     max-width: 650px;
