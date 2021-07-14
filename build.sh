@@ -17,7 +17,7 @@ html-minifier -c $maindir/builder/html-minifier.conf index-premini.html > index.
 }
 
 listmaker () {
-echo "Imorty - Plain list of all articles" > title
+echo "Plain list of all articles" > title
 sed "s/include({{body\.html}})/include({{listcake}})/g" $maindir/builder/page_header.html | cat - $maindir/builder/footer.html | m4 > list-premini.html
 html-minifier -c $maindir/builder/html-minifier.conf list-premini.html > ../docs/p/index.html
 rm list-premini.html title listcake
