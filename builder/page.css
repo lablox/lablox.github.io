@@ -23,10 +23,6 @@ img {
     height: auto;
 }
 
-h1 {
-    margin: 0;
-}
-
 .center {
     display: block;
     margin: 0 auto;
@@ -53,14 +49,6 @@ h1 {
 }
 
 .content {
-    font-size: 120%;
     margin: 1% auto;
     max-width: 650px;
-}
-
-@media screen and (max-width: 500px) {
-    div.content {
-        margin: 0;
-        font-size: 100%;
-    }
 }
