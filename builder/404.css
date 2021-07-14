@@ -19,18 +19,14 @@ img {
     height: auto;
 }
 
-h1 {
+.msg h1 {
     font-size: 480%;
     margin: 0;
 }
 
-h2 {
+.msg h2 {
     font-size: 195%;
     margin: 0;
-}
-
-a {
-    color: #ccc;
 }
 
 .center {
