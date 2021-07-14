@@ -6,7 +6,7 @@ set -e
 homemd2html () {
 pandoc -f markdown-auto_identifiers -t html5 --lua-filter=$maindir/builder/auto_identifiers_underscore.lua index.md -o body.html
 cat index.md | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > title
-for ((obj = $(ls -fA1 ../markdown/p | wc -l) ; obj == 1 ; obj--))
+for ((obj = $(ls -fA1 ../markdown/p | wc -l) ; obj >= 1 ; obj--))
 do
     cat ../markdown/p/$obj/index.md | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > "$obj"_title
     sed "s/objnumber/$obj/g" ../builder/layer >> pancake
