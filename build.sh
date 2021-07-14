@@ -10,9 +10,17 @@ for ((obj = $(ls -fA1 ../markdown/p | wc -l) ; obj >= 1 ; obj--))
 do
     cat ../markdown/p/$obj/index.md | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > "$obj"_title
     sed "s/objnumber/$obj/g" ../builder/layer >> pancake
+    sed "s/objnumber/$obj/g" ../builder/list_layer >> listcake
 done
 cat $maindir/builder/home_header.html body.html $maindir/builder/banner pancake $maindir/builder/footer.html | m4 > index-premini.html
 html-minifier -c $maindir/builder/html-minifier.conf index-premini.html > index.html
+}
+
+listmaker () {
+echo "Imorty - Plain list of all articles" > title
+sed "s/include({{body\.html}})/include({{listcake}})/g" $maindir/builder/page_header.html | cat - $maindir/builder/footer.html | m4 > list-premini.html
+html-minifier -c $maindir/builder/html-minifier.conf list-premini.html > ../docs/p/index.html
+rm list-premini.html title listcake
 }
 
 404md2html () {
@@ -63,6 +71,7 @@ mv home.css 404.css h404
 cd h404
 homemd2html
 404md2html
+listmaker
 cd ../docs
 recursivemd2html
 cd $maindir
