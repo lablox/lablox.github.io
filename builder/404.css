@@ -76,14 +76,11 @@ img {
 .txt {
     flex: 1 1 300px;
     margin: 0 10px;
+    text-align: center;
 }
 
 .txt a {
     background-color: #000;
-}
-
-.txt p {
-    margin: 0;
 }
 
 .txt h1 {
