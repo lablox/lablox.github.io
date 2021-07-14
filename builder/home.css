@@ -45,9 +45,6 @@ h1 {
 
 .txt {
     flex: 1 1 300px;
-}
-
-.txt p {
     margin: 0 10px;
 }
 
