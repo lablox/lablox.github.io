@@ -35,7 +35,7 @@ md2html () {
 name=$(echo $1 | cut -d'.' -f1)
 pandoc -f markdown-auto_identifiers -t html5 --lua-filter=$maindir/builder/auto_identifiers_underscore.lua $1 -o body.html
 cat $1 | head -n1 | sed -E "s|^#\s||g;s|\s$||g" > title
-cat $maindir/builder/$2 $maindir/builder/footer.html | m4 > $name-premini.html
+cat $maindir/builder/page_header.html $maindir/builder/footer.html | m4 > $name-premini.html
 html-minifier -c $maindir/builder/html-minifier.conf $name-premini.html > $name.html
 rm body.html $name-premini.html title $1
 }
@@ -50,7 +50,7 @@ do
         cd ..
     elif [[ $obj = "index.md" ]]
     then
-        md2html $obj page_header.html
+        md2html $obj
     fi
 done
 }
