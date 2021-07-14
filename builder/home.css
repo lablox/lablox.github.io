@@ -58,7 +58,7 @@ h1 {
 .banner {
     display: flex;
     flex-wrap: wrap;
-    background-color: #151515;
+    background-color: #000;
 }
 
 .logo {
@@ -68,10 +68,6 @@ h1 {
 .welcome {
     flex: 1 1 300px;
     text-align: center;
-}
-
-.welcome p {
-    margin: 0;
 }
 
 .content {
