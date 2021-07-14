@@ -77,5 +77,5 @@ cd ../docs
 recursivemd2html
 cd $maindir
 mv h404/index.html h404/404.html docs
-cp ./builder/imorty.png docs
+cp ./builder/imorty.jpg docs
 rm -rf h404 page.css home.css
