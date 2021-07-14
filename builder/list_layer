@@ -1,5 +1,5 @@
   <div class="prnt rnd">
     <div class="txt">
-      <p><a href="/p/objnumber/">include({{./objnumber_title}})</a></p>
+      <p><a href="/p/objnumber/" class="btn">include({{./objnumber_title}})</a></p>
     </div>
   </div>
