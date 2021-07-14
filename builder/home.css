@@ -28,6 +28,12 @@ img {
     margin: 0 auto;
 }
 
+.btn {
+    text-decoration: none;
+    border-radius:5px;
+    padding: 5px;
+}
+
 .prnt {
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +48,10 @@ img {
 .txt {
     flex: 1 1 300px;
     margin: 0 10px;
+}
+
+.txt a {
+    background-color: #000;
 }
 
 .rnd {
