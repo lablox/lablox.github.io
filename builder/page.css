@@ -67,6 +67,33 @@ img {
     margin: 0 5px;
 }
 
+.prnt {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #151515;
+    margin: 5% 0;
+}
+
+.txt {
+    flex: 1 1 300px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.txt a {
+    background-color: #000;
+}
+
+.txt h1 {
+    font-size: 480%;
+    margin: 0;
+}
+
+.txt h2 {
+    font-size: 195%;
+    margin: 0;
+}
+
 .content {
     margin: 1% auto;
     max-width: 650px;
