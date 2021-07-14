@@ -1,8 +1,8 @@
   <div class="prnt rnd">
     <div class="tmb center">
-      <img src="/p/objnumber/objnumber.jpg" class="rnd" alt="include({{./objnumber_title}})">
+      <a href="/p/objnumber/"><img src="/p/objnumber/objnumber.jpg" class="rnd" alt="include({{./objnumber_title}})"></a>
     </div>
     <div class="txt">
-      <p>include({{./objnumber_title}})</p>
+      <a href="/p/objnumber/">include({{./objnumber_title}})</a>
     </div>
   </div>
