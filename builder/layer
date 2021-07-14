@@ -3,6 +3,6 @@
       <a href="/p/objnumber/"><img src="/p/objnumber/objnumber.jpg" class="rnd" alt="include({{./objnumber_title}})"></a>
     </div>
     <div class="txt">
-      <p>include({{./objnumber_title}}) <a href="/p/objnumber/">Read</a></p>
+      <p>include({{./objnumber_title}}) <a href="/p/objnumber/" class="btn">Read</a></p>
     </div>
   </div>
