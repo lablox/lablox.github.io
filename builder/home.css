@@ -96,6 +96,10 @@ img {
     margin: 0 5px;
 }
 
+.bnrtxt h1 {
+    margin: 0;
+}
+
 .content {
     margin: 1% auto;
     max-width: 650px;
