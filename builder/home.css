@@ -10,7 +10,7 @@ body {
     Apple Color Emoji,
     Segoe UI Emoji;
     color: #ccc;
-    background-color: #1c1c1c;
+    background-color: #2d2d2d;
     line-height: 1.6;
 }
 
@@ -37,7 +37,7 @@ img {
 .prnt {
     display: flex;
     flex-wrap: wrap;
-    background-color: #151515;
+    background-color: #1c1c1c;
     margin: 5% 0;
 }
 
