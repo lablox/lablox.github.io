@@ -66,6 +66,10 @@ img {
     margin: 0 5px;
 }
 
+.bnrtxt h1 {
+    margin: 0;
+}
+
 .prnt {
     display: flex;
     flex-wrap: wrap;
