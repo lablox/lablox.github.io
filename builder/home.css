@@ -46,7 +46,7 @@ img {
 }
 
 .txt {
-    flex: 1 1 300px;
+    flex: 1 1 200px;
     margin: 0 10px;
 }
 
@@ -69,11 +69,11 @@ img {
 }
 
 .bnrlog {
-    flex: 0 1 196px;
+    flex: 0 1 130px;
 }
 
 .bnrtxt {
-    flex: 1 1 300px;
+    flex: 1 1 305px;
     text-align: center;
     max-width: 100%;
 }
