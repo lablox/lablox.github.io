@@ -64,9 +64,6 @@ maindir=$(pwd)
 lintmini page.css
 lintmini home.css
 lintmini 404.css
-mv markdown/footnote.md .
-pandoc -f markdown-auto_identifiers -t html5 --lua-filter=$maindir/builder/auto_identifiers_underscore.lua footnote.md -o footnote
-rm footnote.md
 rm -rf docs
 cp -r markdown docs
 mkdir h404
@@ -81,4 +78,4 @@ recursivemd2html
 cd $maindir
 mv h404/index.html h404/404.html docs
 cp ./builder/imorty.jpg docs
-rm -rf h404 page.css home.css footnote
+rm -rf h404 page.css home.css
