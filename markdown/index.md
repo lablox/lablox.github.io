@@ -1,6 +1,6 @@
 # Welcome to Imorty
 
-Death bad. Immortality good. m'kay?
+Death bad. Immortality good.
 
 * [GitHub](https://github.com/imorty)
 * [YouTube](/)
