@@ -19,7 +19,7 @@ html-minifier -c $maindir/builder/html-minifier.conf index-premini.html > index.
 listmaker () {
 echo "Plain list of all articles" > title
 echo "<h1>$(cat title)</h1>" | cat - listcake > listpancake
-sed "s/include({{body\.html}})/include({{listpancake}})/g;s/page\.css/list.css/g" $maindir/builder/page_header.html | cat - $maindir/builder/footer.html | m4 > list-premini.html
+sed "s/include({{body\.html}})/include({{listpancake}})/g" $maindir/builder/page_header.html | cat - $maindir/builder/footer.html | m4 > list-premini.html
 html-minifier -c $maindir/builder/html-minifier.conf list-premini.html > ../docs/p/index.html
 rm list-premini.html title listcake listpancake
 }
@@ -63,7 +63,6 @@ postcss --use cssnano -o ./$1 ./builder/$1
 maindir=$(pwd)
 lintmini page.css
 lintmini home.css
-lintmini list.css
 lintmini 404.css
 rm -rf docs
 cp -r markdown docs
@@ -79,4 +78,4 @@ recursivemd2html
 cd $maindir
 mv h404/index.html h404/404.html docs
 cp ./builder/imorty.jpg docs
-rm -rf h404 page.css home.css list.css
+rm -rf h404 page.css home.css
