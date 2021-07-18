@@ -48,6 +48,7 @@ img {
 .txt {
     flex: 1 1 200px;
     margin: 0 10px;
+    font-weight: bold;
 }
 
 .txt a {
