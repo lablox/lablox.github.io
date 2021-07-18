@@ -63,6 +63,7 @@ postcss --use cssnano -o ./$1 ./builder/$1
 maindir=$(pwd)
 lintmini page.css
 lintmini home.css
+lintmini list.css
 lintmini 404.css
 rm -rf docs
 cp -r markdown docs
@@ -78,4 +79,4 @@ recursivemd2html
 cd $maindir
 mv h404/index.html h404/404.html docs
 cp ./builder/imorty.jpg docs
-rm -rf h404 page.css home.css
+rm -rf h404 page.css home.css list.css
