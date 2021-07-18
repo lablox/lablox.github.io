@@ -19,7 +19,7 @@ html-minifier -c $maindir/builder/html-minifier.conf index-premini.html > index.
 listmaker () {
 echo "Plain list of all articles" > title
 echo "<h1>$(cat title)</h1>" | cat - listcake > listpancake
-sed "s/include({{body\.html}})/include({{listpancake}})/g" $maindir/builder/page_header.html | cat - $maindir/builder/footer.html | m4 > list-premini.html
+sed "s/include({{body\.html}})/include({{listpancake}})/g;s|style.*style|style>esyscmd\({{sed '/\.txt {/a\    font-weight: bold\;' /github/workspace/page.css}}\)</style|g" $maindir/builder/page_header.html | cat - $maindir/builder/footer.html | m4 > list-premini.html
 html-minifier -c $maindir/builder/html-minifier.conf list-premini.html > ../docs/p/index.html
 rm list-premini.html title listcake listpancake
 }
